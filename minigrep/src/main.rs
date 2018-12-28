@@ -7,11 +7,18 @@ use minigrep::Config;	// Import our Config struct
 
 
 fn main() {
-	// Turn args iterator into vector via collect
-	let args: Vec<String> = env::args().collect();
+	// // Turn args iterator into vector via collect
+	// let args: Vec<String> = env::args().collect();
 
-	// Parses the command line arguments into Config struct
-	let config = Config::new(&args).unwrap_or_else(|err| {
+	// // Parses the command line arguments into Config struct
+	// let config = Config::new(&args).unwrap_or_else(|err| {
+	// 	eprintln!("Problem parsing arguments: {}", err);
+	// 	process::exit(1);
+	// });
+
+	// Pass the env::args() iterator directly into the new function
+	// which passes ownership of the args iterator.
+	let config = Config::new(env::args()).unwrap_or_else(|err| {
 		eprintln!("Problem parsing arguments: {}", err);
 		process::exit(1);
 	});

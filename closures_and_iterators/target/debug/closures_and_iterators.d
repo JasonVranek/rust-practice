@@ -1,0 +1,1 @@
+/Users/JasonVranek/Desktop/rust/closures_and_iterators/target/debug/closures_and_iterators.dSYM: /Users/JasonVranek/Desktop/rust/closures_and_iterators/src/lib.rs /Users/JasonVranek/Desktop/rust/closures_and_iterators/src/main.rs

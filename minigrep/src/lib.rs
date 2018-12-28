@@ -10,16 +10,24 @@ pub struct Config {
 }
 
 impl Config {
-	pub fn new (args: &[String]) -> Result<Config, &'static str> {
+	pub fn new (mut args: std::env::Args) -> Result<Config, &'static str> {
 		if args.len() < 3 {
 			// This is the &'static str case in the function definition Result
+            // Since it is static, it doesn't have to be made at runtime.
 			return Err("not enough arguments");
 		}
+        // Consume the item in iterator that is the file name
+        args.next();
 
-		// Cannot move element unless it is a copied slice since args is reference,
-		// this is simpler than using lifetimes, but less efficient at runtime. 
-		let query = args[1].clone();
-		let filename = args[2].clone();
+        // Match over the result when consuming the iterator which is of type Option
+		let query = match args.next() {
+            Some(arg) => arg,
+            None => return Err("Didn't get a query string"),
+        };
+		let filename = match args.next() {
+            Some(arg) => arg,
+            None => return Err("Didn't get a filename"),
+        };
 
 		// Check for environment variable CASE_INSENSITIVE that is wrapped
 		// as a Result. The Result will be Ok() if the Env variable is set, and
@@ -60,25 +68,19 @@ pub fn run(config: Config) -> Result<(), Box<Error>> {
 
 pub fn search<'a>(query: &str, contents: &'a str) -> Vec<&'a str> {
 	// The lifetime 'a specifies contents lives as long as the return value
-	let mut results = Vec::new();
-	// The lines method returns a line by line iterator for strings
-	for line in contents.lines() {
-        if line.contains(query) {
-        	results.push(line);
-        }
-	}
-	results
+	// lines() separates the text by newline characters into an iterator
+    // filter removes all lines that don't contain our query string
+    // collect turns this iterator back into a vector of string slices
+    contents.lines()
+        .filter(|line| line.contains(query))
+        .collect()
 }
 
 pub fn search_case_insensitive<'a>(query: &str, contents: &'a str) -> Vec<&'a str> {
-	let mut results = Vec::new();
 	let query = query.to_lowercase();
-	for line in contents.lines() {
-		if line.to_lowercase().contains(&query) {
-			results.push(line);
-		}
-	}
-	results
+    contents.lines()
+        .filter(|line| line.to_lowercase().contains(&query))
+        .collect()
 }
 
 #[cfg(test)]

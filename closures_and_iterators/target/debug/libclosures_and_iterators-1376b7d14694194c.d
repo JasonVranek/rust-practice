@@ -1,0 +1,1 @@
+/Users/JasonVranek/Desktop/rust/closures_and_iterators/target/debug/libclosures_and_iterators-1376b7d14694194c.rmeta: /Users/JasonVranek/Desktop/rust/closures_and_iterators/src/lib.rs /Users/JasonVranek/Desktop/rust/closures_and_iterators/src/main.rs
