@@ -21,6 +21,6 @@ fn takes_ownership(some_string: String) {
 }
 
 // Takes ownership as a parameter but returns ownership back
-fn take_and_giveback(some_string: String) -> String{
+fn take_and_giveback(some_string: String) -> String {
 	some_string
 }

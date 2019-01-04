@@ -1,0 +1,1 @@
+/Users/JasonVranek/Desktop/rust/box_examples/target/debug/libbox_examples-2f29ffe953c77d46.rmeta: /Users/JasonVranek/Desktop/rust/box_examples/src/lib.rs /Users/JasonVranek/Desktop/rust/box_examples/src/main.rs
