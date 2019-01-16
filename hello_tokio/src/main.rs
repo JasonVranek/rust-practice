@@ -13,7 +13,7 @@ fn main() {
     let client = TcpStream::connect(&addr).and_then(|stream| {
         println!("Created the stream! (it is a Future of the created TcpStream)");
 
-	    io::write_all(stream, "hello world\n").then(|result| {
+	    io::write_all(stream, "hello world\r\n").then(|result| {
 	      println!("wrote to stream; success={:?}", result.is_ok());
 	      Ok(())
 	    })
