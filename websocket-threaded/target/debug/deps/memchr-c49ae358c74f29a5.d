@@ -1,0 +1,12 @@
+/Users/JasonVranek/Desktop/LearningProgramming/rust/websocket-threaded/target/debug/deps/memchr-c49ae358c74f29a5.rmeta: /Users/JasonVranek/.cargo/registry/src/github.com-1ecc6299db9ec823/memchr-2.1.3/src/lib.rs /Users/JasonVranek/.cargo/registry/src/github.com-1ecc6299db9ec823/memchr-2.1.3/src/c.rs /Users/JasonVranek/.cargo/registry/src/github.com-1ecc6299db9ec823/memchr-2.1.3/src/fallback.rs /Users/JasonVranek/.cargo/registry/src/github.com-1ecc6299db9ec823/memchr-2.1.3/src/iter.rs /Users/JasonVranek/.cargo/registry/src/github.com-1ecc6299db9ec823/memchr-2.1.3/src/naive.rs /Users/JasonVranek/.cargo/registry/src/github.com-1ecc6299db9ec823/memchr-2.1.3/src/x86/mod.rs /Users/JasonVranek/.cargo/registry/src/github.com-1ecc6299db9ec823/memchr-2.1.3/src/x86/avx.rs /Users/JasonVranek/.cargo/registry/src/github.com-1ecc6299db9ec823/memchr-2.1.3/src/x86/sse2.rs
+
+/Users/JasonVranek/Desktop/LearningProgramming/rust/websocket-threaded/target/debug/deps/memchr-c49ae358c74f29a5.d: /Users/JasonVranek/.cargo/registry/src/github.com-1ecc6299db9ec823/memchr-2.1.3/src/lib.rs /Users/JasonVranek/.cargo/registry/src/github.com-1ecc6299db9ec823/memchr-2.1.3/src/c.rs /Users/JasonVranek/.cargo/registry/src/github.com-1ecc6299db9ec823/memchr-2.1.3/src/fallback.rs /Users/JasonVranek/.cargo/registry/src/github.com-1ecc6299db9ec823/memchr-2.1.3/src/iter.rs /Users/JasonVranek/.cargo/registry/src/github.com-1ecc6299db9ec823/memchr-2.1.3/src/naive.rs /Users/JasonVranek/.cargo/registry/src/github.com-1ecc6299db9ec823/memchr-2.1.3/src/x86/mod.rs /Users/JasonVranek/.cargo/registry/src/github.com-1ecc6299db9ec823/memchr-2.1.3/src/x86/avx.rs /Users/JasonVranek/.cargo/registry/src/github.com-1ecc6299db9ec823/memchr-2.1.3/src/x86/sse2.rs
+
+/Users/JasonVranek/.cargo/registry/src/github.com-1ecc6299db9ec823/memchr-2.1.3/src/lib.rs:
+/Users/JasonVranek/.cargo/registry/src/github.com-1ecc6299db9ec823/memchr-2.1.3/src/c.rs:
+/Users/JasonVranek/.cargo/registry/src/github.com-1ecc6299db9ec823/memchr-2.1.3/src/fallback.rs:
+/Users/JasonVranek/.cargo/registry/src/github.com-1ecc6299db9ec823/memchr-2.1.3/src/iter.rs:
+/Users/JasonVranek/.cargo/registry/src/github.com-1ecc6299db9ec823/memchr-2.1.3/src/naive.rs:
+/Users/JasonVranek/.cargo/registry/src/github.com-1ecc6299db9ec823/memchr-2.1.3/src/x86/mod.rs:
+/Users/JasonVranek/.cargo/registry/src/github.com-1ecc6299db9ec823/memchr-2.1.3/src/x86/avx.rs:
+/Users/JasonVranek/.cargo/registry/src/github.com-1ecc6299db9ec823/memchr-2.1.3/src/x86/sse2.rs:

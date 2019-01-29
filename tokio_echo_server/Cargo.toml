@@ -1,0 +1,8 @@
+[package]
+name = "tokio_echo_server"
+version = "0.1.0"
+authors = ["Jason Vranek <jvranek@ucsc.edu>"]
+edition = "2018"
+
+[dependencies]
+tokio = "0.1"

@@ -1,0 +1,1 @@
+{"rustc":11161650738512304635,"features":"[]","target":5859880609285923085,"profile":16874161271514927632,"path":1036222786711178230,"deps":[["ws v0.7.9","ws",3071479049944559297]],"local":[{"MtimeBased":[[1547850387,868711078],".fingerprint/websocket_client_example-1d70645ebe634237/dep-test-bin-websocket_client_example-1d70645ebe634237"]}],"rustflags":[],"edition":"Edition2018"}
